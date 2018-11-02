@@ -1,0 +1,81 @@
+
+.body {
+  display: grid;
+  grid-area: 2 / 1 / 8 /6;
+  grid: repeat(6, 1fr) / repeat(5, 1fr);
+  /* border: 2px solid #f76707; */
+}
+
+.green.shiba {
+  grid-area: 1 / 3 / 4 / 6;
+  justify-self: center;
+  align-self: center;
+  z-index: -2;
+  height: 50%;
+}
+
+.grad {
+  grid-area: 5 / 1 / 7 / 4;
+  display: block;
+  width: 75%;
+  height: 50%;
+  border-color: #FFFFFF;
+  align-self: center;
+  justify-self: center;
+}
+
+.img1 {
+  grid-area: 2 / 1 / 6 / 5; 
+  z-index: -1;
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.name-shiba {
+  grid-area: 1 / 1 / 3 / 5; 
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  align-self: center;
+}
+
+.name-shiba div{
+  height: 50px;
+  position: absolute;
+  color: rgb(227, 151, 80);
+}
+
+.name-shiba div::before{
+  content:"SHIBA INU";
+  position: inherit;
+  top: -10px;
+  overflow: hidden;
+  opacity: 0.7;
+  height: 45%;
+}
+
+.name-shiba div::after{
+  content:"SHIBA INU";
+  position: inherit;
+  top: -20px;
+  overflow: hidden;
+  opacity: 0.4;
+  height: 30%;
+  left: 0;
+}
+
+.num.shiba {
+  grid-area: 6 / 1 / 7 / 2; 
+  justify-self: start;
+}
+
+.txt.shiba {
+  grid-area: 5 / 5 / 6 / 5;
+  justify-self: start;
+  align-self: center;
+  transform: rotate(-270deg);
+  padding-top: 50px;s
+}
